@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-900 font-sans transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+.data-table-container table {
+  @apply w-full text-sm text-left border-collapse;
+}
+
+.data-table-container th {
+  @apply p-3 bg-zinc-100 border-b border-zinc-200 font-semibold text-zinc-700 transition-colors;
+}
+
+.dark .data-table-container th {
+  @apply bg-zinc-900 border-zinc-800 text-zinc-300;
+}
+
+.data-table-container td {
+  @apply p-3 border-b border-zinc-100 transition-colors;
+}
+
+.dark .data-table-container td {
+  @apply border-zinc-900 text-zinc-400;
+}
+
+.metric-card {
+  @apply bg-white p-4 rounded-xl border border-zinc-200 shadow-sm flex flex-col items-center justify-center text-center transition-all;
+}
+
+.dark .metric-card {
+  @apply bg-zinc-900 border-zinc-800 shadow-none;
+}
+
+.metric-value {
+  @apply text-2xl font-bold text-zinc-900 transition-colors;
+}
+
+.dark .metric-value {
+  @apply text-zinc-100;
+}
+
+.metric-label {
+  @apply text-xs font-medium text-zinc-500 uppercase tracking-wider mt-1 transition-colors;
+}
+
+.dark .metric-label {
+  @apply text-zinc-400;
+}
