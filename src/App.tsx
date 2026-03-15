@@ -928,7 +928,7 @@ export default function App() {
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">Coeficiente</th>
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">Error Est.</th>
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">Estadístico t</th>
-                                <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">P &gt; |t|</th>
+                                <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">P-value</th>
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">[0.025 - 0.975]</th>
                               </tr>
                             </thead>
