@@ -929,7 +929,7 @@ export default function App() {
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">Error Est.</th>
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">Estadístico t</th>
                                 <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">P-value</th>
-                                <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">[0.025 - 0.975]</th>
+                                <th className="p-3 border-b border-zinc-200 dark:border-zinc-800 dark:text-zinc-300">IC 95%</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -943,7 +943,7 @@ export default function App() {
                                     {modelResults.pvalues.const?.toFixed(4) || 'N/A'}
                                   </span>
                                 </td>
-                                <td className="p-3 border-b border-zinc-100 dark:border-zinc-900 font-mono text-xs text-zinc-400 dark:text-zinc-500">
+                                <td className="p-3 border-b border-zinc-100 dark:border-zinc-900 font-mono text-zinc-500 dark:text-zinc-400">
                                   [{modelResults.conf_int.const?.[0]?.toFixed(3) || 'N/A'}, {modelResults.conf_int.const?.[1]?.toFixed(3) || 'N/A'}]
                                 </td>
                               </tr>
@@ -958,7 +958,7 @@ export default function App() {
                                       {modelResults.pvalues[x]?.toFixed(4) || 'N/A'}
                                     </span>
                                   </td>
-                                  <td className="p-3 border-b border-zinc-100 dark:border-zinc-900 font-mono text-xs text-zinc-400 dark:text-zinc-500">
+                                  <td className="p-3 border-b border-zinc-100 dark:border-zinc-900 font-mono text-zinc-500 dark:text-zinc-400">
                                     [{modelResults.conf_int[x]?.[0]?.toFixed(3) || 'N/A'}, {modelResults.conf_int[x]?.[1]?.toFixed(3) || 'N/A'}]
                                   </td>
                                 </tr>
